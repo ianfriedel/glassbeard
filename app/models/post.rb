@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   belongs_to :category
+  resourcify
 
   has_attached_file :image, styles:{ large: "650x650>", medium: "500x500>", thumb: "300x300>" }
 
