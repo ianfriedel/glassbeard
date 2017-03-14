@@ -5,7 +5,7 @@
 
 <%= @post.each do |post| %>
   <%= post.title %>
-  <%= image_tag post.image.url(:large), class: "img-responsive" %>
+  <%= image_tag post.image.url(:large) %>
   <%= post.date %>
   <%= post.excerpt %>
   <%= post.author %>
