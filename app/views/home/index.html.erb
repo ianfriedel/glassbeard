@@ -1,18 +1,5 @@
-<div id="background-carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="item active" style="background-image:url(https://eyeondesign.aiga.org/wp-content/uploads/2015/08/ODDDS-aiga-quoted-rand.jpg)"></div>
-        <div class="item" style="background-image:url(https://static1.squarespace.com/static/589ce01a15d5dbf1618bbe9c/58a0abc6d482e9cad93e5d91/58a0b818bf629aca1a455cd7/1486927901671/Southampton+Arts+Center7.jpg?format=2500w)"></div>
-        <div class="item" style="background-image:url(http://fuzzco.com/wp-content/uploads/2013/11/bittermilk.png)"></div>
-      </div>
-    </div>
+<div id="main">
+  <div class="page_wrapper">
+    <h1 class="quote">The secret of getting ahead<br>is getting started.</h1>
+  </div>
 </div>
-
-
-<% @post.each do |post| %>
-  <p><%= post.date %></p>
-  <%= image_tag post.image.url(:large) %>
-  <h1><%= post.title %></h1>
-  <h3><%= post.excerpt %></h3>
-  <p><%= post.author %></p>
-<% end %>

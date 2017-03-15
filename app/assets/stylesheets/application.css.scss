@@ -12,81 +12,87 @@
  *
  *= require_tree .
  *= require_self
+
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
 
 // Body
-
 body{
-  font-family: 'Maven Pro', sans-serif;
+  font-family: 'Chathura', sans-serif;
 }
 
-// Navigation
-
+ /* The side navigation menu */
 .sidenav {
-    display: none;
-    height: 100%;
-    width: 150px;
-    position: fixed;
-    z-index: 1;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 120px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+/* The navigation menu links */
 .sidenav a {
-    padding: 8px 4px 8px 32px;
+    padding: 8px 8px 16px 32px;
     text-decoration: none;
-    font-size: 16px;
-    color: white;
+    font-size: 25px;
+    color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
+    font-size: 2.5em;
 }
 
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
+    font-weight: 800;
     position: absolute;
-    top: 0;
-    font-size: 30px;
-    background-color: #fedc3d;
-    color: black;
-    width: 150px;
+    top: 5px;
+    left: 0;
+    padding: 5;
+    margin: 0;
+    font-size: 48px;
 }
 
-
-
-// Home Page Carousel
-html,body {
-    height:100%;
-    width:100%;
-    position:relative;
-}
-#background-carousel{
-	position:fixed;
-	width:100%;
-	height:100%;
-	z-index:-1;
-}
-.carousel,
-.carousel-inner {
-	width:100%;
-	height:100%;
-	z-index:0;
-	overflow:hidden;
-}
-.item {
-	width:100%;
-	height:100%;
-	background-position:center center;
-	background-size:cover;
-	z-index:0;
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
-#content-wrapper {
-	position:absolute;
-	z-index:1 !important;
-	min-width:100%;
-	min-height:100%;
+.page_wrapper{
+  margin-top: 75px;
+  margin-left: 75px;
+}
+
+.quote{
+  font-size: 8em;
+  line-height: .8em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.open{
+  font-weight: 800;
+  font-size: 20em;
+  width: 50px;
+  height: 50px;
+  color: black;
+  left: 0;
+  padding: 10px 0px 0px 10px;
+  margin: 0;
+  position: absolute;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
