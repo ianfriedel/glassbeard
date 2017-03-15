@@ -28,7 +28,7 @@ body{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #282828; /*Charcoal*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 120px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -39,7 +39,7 @@ body{
     padding: 8px 8px 16px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #fea680;
     display: block;
     transition: 0.3s;
     font-size: 2.5em;
@@ -47,7 +47,7 @@ body{
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #white;
 }
 
 /* Position and style the close button (top right corner) */
@@ -59,6 +59,10 @@ body{
     padding: 5;
     margin: 0;
     font-size: 48px;
+}
+
+.closebtn:hover a{
+  color: #282828;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -73,10 +77,12 @@ body{
 }
 
 .quote{
-  font-size: 8em;
+  font-size: 10em;
   line-height: .8em;
   letter-spacing: 3px;
   text-transform: uppercase;
+  color: #282828;
+  padding-right: 75px;
 }
 
 .open{
@@ -84,15 +90,29 @@ body{
   font-size: 20em;
   width: 50px;
   height: 50px;
-  color: black;
+  color: #282828;
   left: 0;
   padding: 10px 0px 0px 10px;
   margin: 0;
   position: absolute;
 }
 
+.image01{
+  margin-left: 75px;
+  width: 100%;
+  max-width: 50%;
+  max-height: 50%;
+  padding-right: 50px;
+  position: fixed;
+  bottom: 0;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 860px) {
+    .image01 {position: relative;}
 }
