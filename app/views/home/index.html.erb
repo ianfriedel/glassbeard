@@ -2,5 +2,11 @@
   <div class="page_wrapper">
     <h1 class="quote">The secret of getting ahead is getting started.</h1>
   </div>
-  <%= image_tag 'branding01.jpg', class: "img-responsive image01" %>
+
+
+  <% @posts.each do |post| %>
+    <div class="col-md-6">
+      <%= link_to image_tag, post %>
+  <% end %>
+    </div> 
 </div>
