@@ -30,6 +30,12 @@ a:-webkit-any-link:hover{
   text-decoration: none;
 }
 
+p{
+  font-size: 1.25em;
+  line-height: 125%;
+  letter-spacing: .5px;
+}
+
  /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -86,13 +92,58 @@ a:-webkit-any-link:hover{
   margin-left: 75px;
 }
 
+
+
+.bg{
+  width: 100%;
+  background-color: #f1f2f2;
+  margin: 0;
+  padding-right: 20px;
+  bottom: 0;
+}
+
+.fourth{
+  padding-top: 15px;
+}
+
+.fourth:hover,
+.fourth:hover h1{
+  background-color: #282828;
+  color: #fedc3d;
+}
+
+.fourth_quote{
+  font-size: 3em;
+  line-height: .6em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #282828;
+  font-weight: 500;
+  border-bottom: 1px solid #282828;
+}
+
 .quote{
   font-size: 10em;
-  line-height: .8em;
+  line-height: .6em;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #282828;
   padding-right: 75px;
+  font-weight: 500;
+  margin-bottom: 150px;
+}
+
+.action_quote{
+  font-size: 7em;
+  line-height: .6em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #282828;
+  padding-right: 75px;
+  font-weight: 800;
+  margin-bottom: 150px;
+  padding-left: 25px;
+  vertical-align: middle;
 }
 
 .open{
@@ -105,16 +156,6 @@ a:-webkit-any-link:hover{
   padding: 10px 0px 0px 10px;
   margin: 0;
   position: absolute;
-}
-
-.image01{
-  margin-left: 75px;
-  width: 100%;
-  max-width: 50%;
-  max-height: 50%;
-  padding-right: 50px;
-  position: fixed;
-  bottom: 0;
 }
 
 .post_header{
@@ -196,22 +237,58 @@ input[type="submit" i]:hover{
   color: #282828;
 }
 
+.define_intro{
+  border-bottom: 10px solid #fea680;
+  margin-bottom: 25px;
+  width: 25%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.define{
+  margin-top: -2px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 860px) {
-    .image01 {position: relative;}
-    select, input[type="color" i][list]{
-      height: 75px;
-      width: 100%;
-      font-size: 2em;
-      border: none;
-      background-color: #fedc3d;
-      border-radius: none;
-      margin-right: 15px;
-      margin-bottom: 25px;
+@media screen and (max-width: 580px) {
+    .quote{
+      font-size: 4em;
+      margin-bottom: 50px;
     }
+}
+
+@media screen and (max-width: 1000px) {
+  .fourth{
+    width: 70%;
+    padding-top: 15px;
+    display: inline-grid;
+  }
+
+  .navbar-fixed-bottom{
+    position: relative;
+  }
+
+  .bg{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .fourth_quote{
+    font-size: 3em;
+    line-height: .6em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 500;
+  }
 }

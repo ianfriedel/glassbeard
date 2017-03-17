@@ -56,8 +56,8 @@ Rails.application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => 'glassbeard',
-      :s3_credentials => "#{Rails.root}/config/aws.yml",
+    :bucket => 'glassbeard',
+    :s3_credentials => "#{Rails.root}/config/aws.yml",
     }
   }
 end

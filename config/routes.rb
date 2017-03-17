@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'work/index'
+
   root 'home#index'
 
   resources :categories
