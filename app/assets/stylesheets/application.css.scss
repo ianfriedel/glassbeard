@@ -15,18 +15,25 @@
 
  */
 
+//Predefined Color Swatch
+$charcoal: #282828;
+$blue: #01abaa;
+$peach: #fea680;
+$gold: #fedc3d;
+$grey: #ededed;
+
 // Body
 body{
   font-family: 'Chathura', sans-serif;
 }
 
 a:-webkit-any-link{
-  color: #282828;
+  color: $charcoal;
 }
 
 a:-webkit-any-link:hover{
-  color: #01abaa;
-  background-color: #282828;
+  color: $blue;
+  background-color: $charcoal;
   text-decoration: none;
 }
 
@@ -34,6 +41,10 @@ p{
   font-size: 1.25em;
   line-height: 125%;
   letter-spacing: .5px;
+}
+
+h6{
+  font-size: 2em;
 }
 
  /* The side navigation menu */
@@ -44,7 +55,7 @@ p{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #282828; /*Charcoal*/
+    background-color: $charcoal; /*Charcoal*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 120px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -55,7 +66,7 @@ p{
     padding: 8px 8px 16px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #fea680;
+    color: $peach;
     display: block;
     transition: 0.3s;
     font-size: 2.5em;
@@ -78,7 +89,7 @@ p{
 }
 
 .closebtn:hover a{
-  color: #282828;
+  color: $charcoal;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -92,8 +103,6 @@ p{
   margin-left: 75px;
 }
 
-
-
 .bg{
   width: 100%;
   background-color: #f1f2f2;
@@ -102,14 +111,23 @@ p{
   bottom: 0;
 }
 
+.hover_img{
+  background-color: $charcoal;
+}
+
+.hover_img:hover{
+  opacity: .2;
+  background-color: $charcoal;
+}
+
 .fourth{
   padding-top: 15px;
 }
 
 .fourth:hover,
 .fourth:hover h1{
-  background-color: #282828;
-  color: #fedc3d;
+  background-color: $charcoal;
+  color: $gold;
 }
 
 .fourth_quote{
@@ -117,9 +135,9 @@ p{
   line-height: .6em;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #282828;
+  color: $charcoal;
   font-weight: 500;
-  border-bottom: 1px solid #282828;
+  border-bottom: 1px solid $charcoal;
 }
 
 .quote{
@@ -127,7 +145,7 @@ p{
   line-height: .6em;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #282828;
+  color: $charcoal;
   padding-right: 75px;
   font-weight: 500;
   margin-bottom: 150px;
@@ -138,7 +156,7 @@ p{
   line-height: .6em;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #282828;
+  color: $charcoal;
   padding-right: 75px;
   font-weight: 800;
   margin-bottom: 150px;
@@ -151,7 +169,7 @@ p{
   font-size: 20em;
   width: 50px;
   height: 50px;
-  color: #282828;
+  color: $charcoal;
   left: 0;
   padding: 10px 0px 0px 10px;
   margin: 0;
@@ -175,10 +193,10 @@ p{
   width: 100%;
   height: 75px;
   border: none;
-  background-color: #fedc3d;
+  background-color: $gold;
   font-size: 4em;
   font-weight: 400;
-  color: #282828;
+  color: $charcoal;
   line-height: 80%;
   padding-left: 25px;
 }
@@ -193,8 +211,8 @@ p{
   font-size: 4em;
   font-weight: 400;
   padding-left: 25px;
-  color: #fea680;
-  background-color: #282828;
+  color: $peach;
+  background-color: $charcoal;
 }
 
 select, input[type="color" i][list]{
@@ -202,7 +220,7 @@ select, input[type="color" i][list]{
   width: 17%;
   font-size: 2em;
   border: none;
-  background-color: #fedc3d;
+  background-color: $gold;
   border-radius: none;
   margin-right: 15px;
 }
@@ -214,7 +232,7 @@ select, input[type="color" i][list]{
 input[type="hidden" i], input[type="image" i], input[type="file" i]{
   height: 75px;
   width: 50%;
-  background-color: #fedc3d;
+  background-color: $gold;
   border: none;
   padding-top: 25px;
   padding-left: 25px;
@@ -226,19 +244,19 @@ input[type="button" i], input[type="submit" i], input[type="reset" i]{
   font-size: 4em;
   text-transform: uppercase;
   letter-spacing: 3px;
-  background-color: #282828;
-  color: #fea680;
+  background-color: $charcoal;
+  color: $peach;
   border: none;
   margin-top: 50px;
 }
 
 input[type="submit" i]:hover{
   background-color: white;
-  color: #282828;
+  color: $charcoal;
 }
 
 .define_intro{
-  border-bottom: 10px solid #fea680;
+  border-bottom: 10px solid $peach;
   margin-bottom: 25px;
   width: 25%;
   font-weight: 700;
@@ -249,6 +267,19 @@ input[type="submit" i]:hover{
   margin-top: -2px;
   margin-bottom: 35px;
   font-weight: 700;
+}
+
+.work_header{
+  font-size: 3.5em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.work{
+  width: 100%;
+  margin-top: 25px;
+  padding: 0;
 }
 
 
@@ -288,7 +319,7 @@ input[type="submit" i]:hover{
     line-height: .6em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #282828;
+    color: $charcoal;
     font-weight: 500;
   }
 }
