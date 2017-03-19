@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
   get 'work/index'
+  get 'work/branding'
+  get 'work/website'
+  get 'work/businesscard'
+  get 'work/photography'
+  get 'work/identity'
+  get 'work/advertising'
 
   root 'home#index'
 

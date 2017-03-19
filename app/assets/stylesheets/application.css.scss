@@ -100,7 +100,7 @@ h6{
 
 .page_wrapper{
   margin-top: 75px;
-  margin-left: 75px;
+  margin-left: 0px;
 }
 
 .bg{
@@ -256,11 +256,17 @@ input[type="submit" i]:hover{
 }
 
 .define_intro{
-  border-bottom: 10px solid $peach;
+  border-bottom: 3px solid $peach;
   margin-bottom: 25px;
-  width: 25%;
+  width: 100%;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.define_intro a:hover{
+  text-decoration: none;
+  background-color: white;
 }
 
 .define{
@@ -282,7 +288,14 @@ input[type="submit" i]:hover{
   padding: 0;
 }
 
-
+.line{
+  background-color: white;
+  height: 3px;
+  width: 50%;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  opacity: .2;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -292,8 +305,12 @@ input[type="submit" i]:hover{
 
 @media screen and (max-width: 580px) {
     .quote{
-      font-size: 4em;
-      margin-bottom: 50px;
+      display: none;
+    }
+
+    .img{
+      width: auto;
+      height: 250px;
     }
 }
 

@@ -12,27 +12,39 @@
 
     <div class="row">
       <div class="col-md-6">
-        <%= link_to image_tag("branding.jpg", class: "img-responsive hover_img"), root_path %>
+        <%= link_to work_branding_path do %>
+          <%= image_tag("branding.jpg", class: "img-responsive hover_img img") %>
+        <% end %>
         <h1 class="define">Branding</h1>
       </div>
       <div class="col-md-6">
-        <%= image_tag("website.jpg", class: "img-responsive hover_img") %>
+        <%= link_to work_website_path do %>
+          <%= image_tag("website.jpg", class: "img-responsive hover_img img") %>
+        <% end %>
         <h1 class="define">Website</h1>
       </div>
       <div class="col-md-3">
-        <%= image_tag("business_card.jpg", class: "img-responsive hover_img") %>
+        <%= link_to work_businesscard_path do %>
+          <%= image_tag("business_card.jpg", class: "img-responsive hover_img") %>
+        <% end %>
         <h1 class="define">Business Cards</h1>
       </div>
       <div class="col-md-3">
-        <%= image_tag("photography.jpg", class: "img-responsive hover_img") %>
+        <%= link_to work_photography_path do %>
+          <%= image_tag("photography.jpg", class: "img-responsive hover_img") %>
+        <% end %>
         <h1 class="define">Photography</h1>
       </div>
       <div class="col-md-3">
-        <%= image_tag("identity.jpg", class: "img-responsive hover_img") %>
+        <%= link_to work_identity_path do %>
+          <%= image_tag("identity.jpg", class: "img-responsive hover_img") %>
+        <% end %>
         <h1 class="define">Identity</h1>
       </div>
       <div class="col-md-3">
-        <%= image_tag("advertising.jpg", class: "img-responsive hover_img") %>
+        <%= link_to work_advertising_path do %>
+          <%= image_tag("advertising.jpg", class: "img-responsive hover_img") %>
+        <% end %>
         <h1 class="define">Advertising</h1>
       </div>
     </div>
