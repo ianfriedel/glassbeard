@@ -1,16 +1,11 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "logo01.png" %></a>
-  <%= link_to "Work", work_index_path %>
-  <%= link_to "Branding", work_branding_path %>
-  <%= link_to "Website", work_website_path %>
-  <%= link_to "Business Card", work_businesscard_path %>
-  <%= link_to "Photography", work_photography_path %>
-  <%= link_to "Identity", work_identity_path %>
-  <%= link_to "Advertising", work_identity_path %>
-  <%= link_to "New Post", new_post_path %>
-  <div class="line"></div>
   <%= link_to "Home", root_path %>
+  <%= link_to "Work", work_index_path %>
   <%= link_to "Contact", contact_index_path %>
+  <% if user_signed_in? %>
+    <%= link_to "New Post", new_post_path %>
+  <%end %>
 </div>
 
 <!-- Use any element to open the sidenav -->

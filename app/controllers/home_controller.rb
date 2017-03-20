@@ -1,6 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @post = Post.all.order('created_at DESC')
+    @posts = Post.all.order('created_at DESC')
+    @home = @posts[0..3]
   end
 
   def branding

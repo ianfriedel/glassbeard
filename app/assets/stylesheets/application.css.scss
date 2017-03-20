@@ -19,7 +19,7 @@
 $charcoal: #282828;
 $blue: #01abaa;
 $peach: #fea680;
-$gold: #fedc3d;
+$gold: #c6980b;
 $grey: #ededed;
 
 // Body
@@ -32,8 +32,6 @@ a:-webkit-any-link{
 }
 
 a:-webkit-any-link:hover{
-  color: $blue;
-  background-color: $charcoal;
   text-decoration: none;
 }
 
@@ -47,6 +45,19 @@ h6{
   font-size: 2em;
 }
 
+.pull-right{
+  margin-right: 15px;
+}
+
+.next{
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.next:hover{
+  background-color: white;
+}
+
  /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -55,7 +66,7 @@ h6{
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: $charcoal; /*Charcoal*/
+    background-color: black; /*Charcoal*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 120px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -66,7 +77,7 @@ h6{
     padding: 8px 8px 16px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: $peach;
+    color: $grey;
     display: block;
     transition: 0.3s;
     font-size: 2.5em;
@@ -88,8 +99,8 @@ h6{
     font-size: 48px;
 }
 
-.closebtn:hover a{
-  color: $charcoal;
+.closebtn:hover img{
+  background-color: black;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
@@ -109,6 +120,10 @@ h6{
   margin: 0;
   padding-right: 20px;
   bottom: 0;
+}
+
+.enlarge:hover {
+  width: 1000px;
 }
 
 .hover_img{
@@ -256,7 +271,7 @@ input[type="submit" i]:hover{
 }
 
 .define_intro{
-  border-bottom: 3px solid $peach;
+  border-bottom: 3px solid $gold;
   margin-bottom: 25px;
   width: 100%;
   font-weight: 700;
@@ -311,6 +326,22 @@ input[type="submit" i]:hover{
     .img{
       width: auto;
       height: 250px;
+    }
+
+    .open{
+      font-weight: 800;
+      font-size: 5em;
+      color: $charcoal;
+      left: 5px;
+      top: 10px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+    }
+
+    #main {
+        transition: margin-left .5s;
+        padding: 0;
     }
 }
 
