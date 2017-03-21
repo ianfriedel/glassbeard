@@ -5,64 +5,64 @@
 </div>
 
 
-<div id="main small_screen">
-  <div class="page_wrapper">
-    <div class="row">
-      <div class="col-md-10">
-        <h1 class="quote">your brand is what other people say about you <span style="color:#c6980b;">when you are not in the room</span></h1>
-      </div>
-    </div>
-
-    <div>
-      <h1 class="define_intro"><%= link_to "What we do", work_index_path %></h1>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <%= link_to work_branding_path do %>
-          <%= image_tag("static06.jpg", class: "img-responsive hover_img img") %>
-        <% end %>
-        <h1 class="define">Branding</h1>
-      </div>
-      <div class="col-md-6">
-        <%= link_to work_website_path do %>
-          <%= image_tag("static07.jpg", class: "img-responsive hover_img img") %>
-        <% end %>
-        <h1 class="define">Website</h1>
-      </div>
-      <div class="col-md-3">
-        <%= link_to work_businesscard_path do %>
-          <%= image_tag("static09.jpg", class: "img-responsive hover_img") %>
-        <% end %>
-        <h1 class="define">Business Cards</h1>
-      </div>
-      <div class="col-md-3">
-        <%= link_to work_photography_path do %>
-          <%= image_tag("static10.jpg", class: "img-responsive hover_img") %>
-        <% end %>
-        <h1 class="define">Photography</h1>
-      </div>
-      <div class="col-md-3">
-        <%= link_to work_identity_path do %>
-          <%= image_tag("static11.jpg", class: "img-responsive hover_img") %>
-        <% end %>
-        <h1 class="define">Identity</h1>
-      </div>
-      <div class="col-md-3">
-        <%= link_to work_advertising_path do %>
-          <%= image_tag("static09.jpg", class: "img-responsive hover_img") %>
-        <% end %>
-        <h1 class="define">Advertising</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <% @home.each do |post| %>
-        <div class="col-md-4"><%= image_tag post.image.url(:large), class: "img-responsive"%>
-          <h6 class="small-title"><%= link_to post.title, post %></h6>
+  <div id="main">
+    <div class="page_wrapper">
+      <div class="row">
+        <div class="col-md-10">
+          <h1 class="quote">your brand is what other people say about you <span style="color:#c6980b;">when you are not in the room</span></h1>
         </div>
-      <% end %>
-    </div>
+      </div>
 
-</div>
-</div>
+      <div>
+        <h1 class="define_intro"><%= link_to "What we do", work_index_path %></h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <%= link_to work_branding_path do %>
+            <%= image_tag("static06.jpg", class: "img-responsive hover_img img") %>
+          <% end %>
+          <h1 class="define">Branding</h1>
+        </div>
+        <div class="col-md-6">
+          <%= link_to work_website_path do %>
+            <%= image_tag("static07.jpg", class: "img-responsive hover_img img") %>
+          <% end %>
+          <h1 class="define">Website</h1>
+        </div>
+        <div class="col-md-3">
+          <%= link_to work_businesscard_path do %>
+            <%= image_tag("static09.jpg", class: "img-responsive hover_img") %>
+          <% end %>
+          <h1 class="define">Business Cards</h1>
+        </div>
+        <div class="col-md-3">
+          <%= link_to work_photography_path do %>
+            <%= image_tag("static10.jpg", class: "img-responsive hover_img") %>
+          <% end %>
+          <h1 class="define">Photography</h1>
+        </div>
+        <div class="col-md-3">
+          <%= link_to work_identity_path do %>
+            <%= image_tag("static11.jpg", class: "img-responsive hover_img") %>
+          <% end %>
+          <h1 class="define">Identity</h1>
+        </div>
+        <div class="col-md-3">
+          <%= link_to work_advertising_path do %>
+            <%= image_tag("static09.jpg", class: "img-responsive hover_img") %>
+          <% end %>
+          <h1 class="define">Advertising</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <% @home.each do |post| %>
+          <div class="col-md-4"><%= image_tag post.image.url(:large), class: "img-responsive"%>
+            <h6 class="small-title"><%= link_to post.title, post %></h6>
+          </div>
+        <% end %>
+      </div>
+
+  </div>
+  </div>
