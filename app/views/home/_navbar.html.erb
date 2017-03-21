@@ -1,14 +1,47 @@
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "logo01.png" %></a>
-  <%= link_to "Home", root_path %>
-  <%= link_to "Work", work_index_path %>
-  <%= link_to "Contact", contact_index_path %>
-  <% if user_signed_in? %>
-    <%= link_to "New Post", new_post_path %>
-  <%end %>
+<div class="large_screen">
+  <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Work", work_index_path %></li>
+              <li><%= link_to "Contact", contact_index_path %></li>
+              <li>
+                <% if user_signed_in? %>
+                  <%= link_to "New Post", new_post_path %>
+                <%end %>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+          </div>
+          </div>
+      </div>
+</div>
+
+<div class="small">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "logo01.png" %></a>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Work", work_index_path %>
+    <%= link_to "Contact", contact_index_path %>
+    <% if user_signed_in? %>
+      <%= link_to "New Post", new_post_path %>
+    <%end %>
+  </div>
 </div>
 
 <!-- Use any element to open the sidenav -->
-<span onclick="openNav()"><div class="open">&times;</div></span>
+<div class="small">
+  <span onclick="openNav()"><div class="open">&times;</div></span>
+</div>
+
 
 <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->

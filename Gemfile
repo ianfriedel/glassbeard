@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'bootstrap-sass'
 gem 'foundation-rails'
 gem 'aws-sdk', '~> 2'
 gem 'paperclip', github: 'thoughtbot/paperclip'
