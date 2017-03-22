@@ -372,6 +372,21 @@ input[type="submit" i]:hover{
       display: none;
     }
 
+    .collapse{
+      text-align: center;
+    }
+
+    .collapse ul li h1{
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 2em;
+      font-family: 'Chathura', sans-serif;
+    }
+
+    .logo_small{
+      margin-bottom: 25px;
+    }
+
 }
 
 @media screen and (min-width: 580px) {
