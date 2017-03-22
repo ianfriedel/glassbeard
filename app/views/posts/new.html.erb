@@ -1,9 +1,11 @@
-<div id="main">
-  <div class="page_wrapper">
-    <h1 class="post_header">New Post</h1>
+<div class="container">
+  <div id="main">
+    <div class="page_wrapper">
+      <h1 class="post_header">New Post</h1>
 
-    <%= render 'form', post: @post %>
+      <%= render 'form', post: @post %>
 
-    <h1><%= link_to 'Back', posts_path %></h1>
+      <h1><%= link_to 'Back', posts_path %></h1>
+    </div>
   </div>
 </div>
