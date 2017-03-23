@@ -60,4 +60,6 @@ Rails.application.configure do
     :s3_credentials => "#{Rails.root}/config/aws.yml",
     }
   }
+
+  config.action_mailer.perform_deliveries = true
 end

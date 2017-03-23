@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'contact/index'
+  get 'contacts/index'
 
   get 'work/index'
   get 'work/branding'
@@ -10,6 +10,9 @@ Rails.application.routes.draw do
   get 'work/advertising'
 
   root 'home#index'
+
+  match '/contacts', to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
 
   resources :categories
   resources :posts

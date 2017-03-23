@@ -5,6 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'mail_form'
+gem 'simple_form'
+group :development, :test do
+  gem 'foreman'
+end
 gem 'bootstrap-sass'
 gem 'foundation-rails'
 gem 'aws-sdk', '~> 2'

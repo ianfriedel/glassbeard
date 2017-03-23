@@ -21,7 +21,7 @@
               <li><h1><%= link_to "Identity", work_identity_path %></h1></li>
               <li><h1><%= link_to "Photography", work_photography_path %></h1></li>
               <li><h1><%= link_to "Website", work_website_path %></h1></li>
-              <li><h1><%= link_to "Contact", contact_index_path %></h1></li>
+              <li><h1><%= link_to "Contact", contacts_index_path %></h1></li>
               <li>
                 <% if user_signed_in? %>
                   <%= link_to "New Post", new_post_path %>
@@ -46,7 +46,7 @@
       <li><%= link_to "Identity", work_identity_path %></li>
       <li><%= link_to "Photography", work_photography_path %></li>
       <li><%= link_to "Website", work_website_path %></li>
-      <li><%= link_to "Contact", contact_index_path %></li>
+      <li><%= link_to "Contact", contacts_index_path %></li>
       <li><% if user_signed_in? %>
         <%= link_to "New Post", new_post_path %>
       <%end %></li>
