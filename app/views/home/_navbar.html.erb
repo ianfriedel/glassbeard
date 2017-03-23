@@ -11,7 +11,9 @@
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="logo_small"><%= image_tag "logo02.png"%></li>
+              <%= link_to root_path do %>
+              <li class="logo_small"><%= image_tag "logo02.png" %></li>
+              <% end %>
               <li><h1><%= link_to "Work", work_index_path %></h1></li>
               <li><h1><%= link_to "Advertising", work_advertising_path %></h1></li>
               <li><h1><%= link_to "Branding", work_branding_path %></h1></li>
@@ -35,12 +37,20 @@
 <div class="small">
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "logo01.png" %></a>
-    <%= link_to "Home", root_path %>
-    <%= link_to "Work", work_index_path %>
-    <%= link_to "Contact", contact_index_path %>
-    <% if user_signed_in? %>
-      <%= link_to "New Post", new_post_path %>
-    <%end %>
+    <ul class="navbar_links">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Work", work_index_path %></li>
+      <li><%= link_to "Advertising", work_advertising_path %></li>
+      <li><%= link_to "Branding", work_branding_path %></li>
+      <li><%= link_to "Business Cards", work_businesscard_path %></li>
+      <li><%= link_to "Identity", work_identity_path %></li>
+      <li><%= link_to "Photography", work_photography_path %></li>
+      <li><%= link_to "Website", work_website_path %></li>
+      <li><%= link_to "Contact", contact_index_path %></li>
+      <li><% if user_signed_in? %>
+        <%= link_to "New Post", new_post_path %>
+      <%end %></li>
+    </ul>
   </div>
 </div>
 
