@@ -12,7 +12,7 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <%= link_to root_path do %>
-              <li class="logo_small"><%= image_tag "logo02.png" %></li>
+              <li class="logo_small"><%= image_tag "https://s3.amazonaws.com/glassbeard/logonew.png" %></li>
               <% end %>
               <li><h1><%= link_to "Work", work_index_path %></h1></li>
               <li><h1><%= link_to "Advertising", work_advertising_path %></h1></li>
@@ -36,7 +36,7 @@
 
 <div class="small">
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "logo01.png" %></a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= image_tag "https://s3.amazonaws.com/glassbeard/logonew_gold.png" %></a>
     <ul class="navbar_links">
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Work", work_index_path %></li>
@@ -50,6 +50,9 @@
       <li><% if user_signed_in? %>
         <%= link_to "New Post", new_post_path %>
       <%end %></li>
+      <li><% if user_signed_in? %>
+        <%= link_to "Login", new_user_session_path %>
+      <%end%></li>
     </ul>
   </div>
 </div>
