@@ -6,7 +6,14 @@
           <%= image_tag("ian.jpg", class: "img-responsive") %>
         </div>
         <div class="col-md-6">
-          <%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' } do |f| %>
+          <h1 class="blog_post_headline">Thank you for visiting us today</h1>
+          <h6>Please feel free to reach out about pricing, questions or if you just want to sit down and talk about your company and how we make be able to work together.</h6>
+          <br>
+          <h6>GlassBeard Media Co.</h6>
+          <h6>San Antonio, TX</h6>
+          <h6>512.585.3070</h6>
+          <h6><a href="mailto:ianfriedel@gmail.com">Email Us Today!</a></h6>
+          <!-- <%= simple_form_for Contact.new, :html => {:class => 'form-horizontal' } do |f| %>
             <%= f.input :name, :required => true %>
             <%= f.input :email, :required => true %>
             <%= f.input :message, :as => :text, :required => true %>
@@ -17,7 +24,7 @@
               </br>
               <%= f.button :submit, 'Send message', :class=> "btn btn-primary" %>
             </div>
-          <% end %>
+          <% end %> -->
         </div>
       </div>
     </div>
